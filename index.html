@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Challenging the Assumptions of Scrabble Static Evaluation</title>
+  <style>
+      body, h1, h2, h3, p {
+          font-family: "Raleway", Arial, sans-serif;
+      }
+      h1 {
+          letter-spacing: 2px;
+          font-weight: 700;
+      }
+      h2 {
+          font-weight: 600;
+          margin-top: 1.5em;
+      }
+      h3 {
+          font-weight: 400;
+          margin: 0.5em 0;
+      }
+      .content-wrapper {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+      .abstract, .deliverables {
+          text-align: justify;
+          margin-top: 1.5em;
+      }
+      .deliverables .w3-bar {
+          margin-top: 20px;
+          border-top: 2px solid #ccc;
+          border-bottom: 2px solid #ccc;
+          padding: 10px 0;
+      }
+      .deliverables img {
+          display: block;
+          margin: 20px auto;
+          max-width: 100%;
+          height: auto;
+          border: 1px solid #ccc;
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0);
+      }
+      .w3-bar-item {
+          padding: 10px 20px;
+          text-decoration: none;
+      }
+      .w3-bar-item:hover {
+          background-color: #f1f1f1;
+      }
+  </style>
+</head>
+<body>
+  <header class="w3-panel w3-center w3-opacity" style="padding: 50px 20px;">
+    <div class="content-wrapper">
+      <h1>Challenging the Assumptions of<br>Scrabble Static Evaluation</h1>
+      <h3>By Ethan Mathieu</h3>
+      <h3>Advisor: Professor Timothy Barron, PhD</h3>
+      <section class="abstract">
+        <h2>Abstract</h2>
+        <p>
+          In this thesis, I explore improvements to rule-based Scrabble heuristics. 
+          Scrabble is a popular board game where players draw tiles and compete to create the most
+          valuable words on a gridded board. 
+          Scrabble is a fascinating game from a strategy perspective, featuring a degree of randomness 
+          that hems the effectiveness of deterministic move planning 
+          while still being a deeply skill based contest. 
+          As the field tends more toward machine 
+          learning models that fine-tune their strategy with play, 
+          I seek to analyze experimentally if improvements to rule-based heuristics, 
+          which use a fixed algorithm to determine which moves to play,  
+          can still push the boundaries of computational Scrabble. 
+          Specifically, I investigate if improvements can be made to the open source Quackle player, 
+          a robust Scrabble C++ engine designed by an MIT Master's student and a Scrabble Master.
+          I contend that challenging certain predetermined notions that govern 
+          Quackle's current rules around its Monte Carlo Tree Search (MCTS) can lead to a more formidable AI player. 
+          To do so required a rewrite
+          of certain parts of the Quackle engine that made it more modularly extensible. In challenging these
+          predeterminations, I uncover new heuristics that integrate more of the current state of the 
+          game into the algorithm's decision making. I also discover new parameter values for the move search breadth and
+          depth that led to a more effective overall Scrabble engine. 
+          The style of research I applied to this particular engine
+          can be replicated for similarly architected MCTS systems, which are common in games research,
+          to increase their performance.
+
+        </p>
+      </section>
+      <section class="deliverables">
+        <h2>Deliverables</h2>
+        <div class="w3-bar w3-border flex items-center justify-center">
+          <a href="
+              https://docs.google.com/document/d/1VQNMcPbnGIX3zkhlxMN2rssoumt94DWjRWOrSy5qHwo/edit?usp=sharing
+              " class="w3-bar-item w3-button">
+            <i class="fa fa-lightbulb-o"></i> Project Proposal
+          </a>
+          <a href="
+          https://drive.google.com/drive/u/0/folders/1dVt-DoXTrzDzEHnDjYRKE93wi7ci7okt
+          " class="w3-bar-item w3-button">
+            <i class="fa fa-file-text"></i> Final Report
+          </a>
+          <a href="
+              https://docs.google.com/presentation/d/1ef2fQaGHnfdMzmjsC5NVkR7-P_qNOlBY/edit?usp=drive_link&ouid=117909410601686875576&rtpof=true&sd=true
+          " class="w3-bar-item w3-button">
+            <i class="fa fa-picture-o"></i> Final Poster
+          </a>
+        </div>
+      </section>
+    </div>
+  </header>
+</body>
+</html> 
